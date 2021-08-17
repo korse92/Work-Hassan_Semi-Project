@@ -70,7 +70,7 @@
 	        		case "DOING": todoColor = "#f6c23e"; break;
 	        		case "DONE": todoColor = "#1cc88a"; break;
         		}
-        %>
+        	%>
 	        calendar.addEvent({
 	        	id : '<%= t.getTodoId() %>',
 				title : '<%= t.getTodoTitle() %>', 
@@ -103,7 +103,6 @@
 			<% } %> --%>
 		<% } %>
         calendar.render();
-        
         
         var eventArr = calendar.getEvents();
         console.log(eventArr);
